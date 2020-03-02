@@ -1,0 +1,195 @@
+
+
+/*--------- MOBILE ----------*/
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+#left {
+    background-color: #0cbac1;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+#left p {
+    font-size: 18px;
+}
+
+
+#titre h1 {
+    font-size: 26px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+#titre hr {
+    width: 97%;
+    border-top: solid 2px white;
+}
+
+#titre h2 {
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+aside:first-child {
+    margin-top: 20px;
+}
+
+aside {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+aside h3 {
+    display: inline-block;  
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-left: 15px;
+}
+
+#profil i, #langues i, #contact div:first-child i {
+    font-size: 22px;
+}
+
+#profil p {
+    text-align: justify;
+    text-align: left;
+    margin-top: 0;
+    padding-left: 15px;
+    line-height: 20px;
+}
+
+#langues p {
+    margin: 0;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#contact {
+    margin-bottom: 40px;
+}
+
+#contact p {
+    display: inline-block;
+    margin: 2px;
+    margin-left: 12px;
+}
+
+#contact div:first-child {
+    text-align: center;
+}
+
+#contact div {
+    text-align: left;
+    padding-left: 15px;
+}
+
+#right {
+    padding: 2%;
+    margin: 40px 0 40px 30px;
+}
+
+
+#right i {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 22px;
+}
+
+#right h3 {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 22px;
+}
+
+#right hr {
+    display: inline-block;
+    width: 150px;
+    border-top: solid 2px black;
+    margin-left: 40px;
+}
+
+#right div {
+    margin-bottom: 60px;
+}
+
+table:nth-child(3) {
+    padding-left: 150px;
+}
+
+
+/*--------- TABLETTES & LAPTOP ----------*/
+
+@media (min-width: 900px) {
+
+    body {
+        margin: initial;
+    }
+
+    .container {
+        flex-direction: row;
+        border: solid 2px gray;
+        padding: 10px;
+    }
+
+    #left {
+        padding: 0 2%;
+        width: 33%;
+    }
+
+    #left p {
+        font-size: 16px;
+    }
+        
+    #contact {
+        margin-bottom: 0;
+    }
+
+}
+
+
+/*--------- DESKTOP ----------*/
+
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 60%;
+        margin: 0 auto;
+        border: solid 2px gray;
+        padding: 10px;
+    }
+
+    #left {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1450px) {
+
+    .container {
+        width: 50%;
+    }
+
+}
+
