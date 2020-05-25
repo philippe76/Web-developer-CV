@@ -1,195 +1,184 @@
-
-
 /*--------- MOBILE ----------*/
 
 body {
-    margin: 0;
+  margin: 0;
+  height: 100vh;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-
+  display: flex;
+  flex-direction: column;
 }
 
 #left {
-    background-color: #0cbac1;
-    color: white;
-    width: 100%;
-    text-align: center;
+  background-color: #0cbac1;
+  background-color: rgb(27, 155, 155);
+  color: white;
+  width: 100%;
+  text-align: center;
 }
-
 
 #left p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
-
 #titre h1 {
-    font-size: 26px;
-    margin: 10px 0;
-    letter-spacing: 2px;
+  font-size: 26px;
+  margin: 18px 0;
+  letter-spacing: 2px;
 }
 
 #titre hr {
-    width: 97%;
-    border-top: solid 2px white;
+  width: 97%;
+  border-top: solid 2px white;
 }
 
 #titre h2 {
-    font-weight: 500;
-    margin: 10px 0;
-    font-size: 25px;
+  font-weight: 500;
+  margin: 18px 0;
+  font-size: 25px;
 }
 
 img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    max-width: 100%;
+  width: 150px;
+  border-radius: 50%;
+  max-width: 100%;
 }
 
 aside:first-child {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 aside {
-    margin-bottom: 35px;
-    text-align: center;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 aside h3 {
-    display: inline-block;  
-    font-size: 22px;
-    letter-spacing: 2px;
-    margin-left: 15px;
+  display: inline-block;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-left: 15px;
 }
 
-#profil i, #langues i, #contact div:first-child i {
-    font-size: 22px;
+#profil i,
+#langues i,
+#contact div:first-child i {
+  font-size: 22px;
 }
 
 #profil p {
-    text-align: justify;
-    text-align: left;
-    margin-top: 0;
-    padding-left: 15px;
-    line-height: 20px;
+  text-align: justify;
+  text-align: left;
+  margin: 5px;
+  padding-left: 15px;
+  line-height: 20px;
 }
 
 #langues p {
-    margin: 0;
-    text-align: left;
-    padding-left: 15px;
+  margin: 0;
+  text-align: left;
+  padding-left: 15px;
 }
 
 #contact {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
+#contact a,
 #contact p {
-    display: inline-block;
-    margin: 2px;
-    margin-left: 12px;
+  display: inline-block;
+  line-height: 30px;
+  margin: 2px;
+  margin-left: 12px;
+  color: white;
+  text-decoration: none;
 }
 
 #contact div:first-child {
-    text-align: center;
+  text-align: center;
 }
 
 #contact div {
-    text-align: left;
-    padding-left: 15px;
+  text-align: left;
+  padding-left: 15px;
 }
 
 #right {
-    padding: 2%;
-    margin: 40px 0 40px 30px;
+  padding: 2%;
+  margin: 40px 0 40px 30px;
+  width: 100%;
 }
 
-
 #right i {
-    border: 2px solid black;
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 22px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 22px;
 }
 
 #right h3 {
-    display: inline-block;
-    margin-left: 15px;
-    font-size: 22px;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 22px;
 }
 
 #right hr {
-    display: inline-block;
-    width: 150px;
-    border-top: solid 2px black;
-    margin-left: 40px;
+  border-top: solid 2px black;
+  margin-bottom: 50px;
 }
 
 #right div {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 table:nth-child(3) {
-    padding-left: 150px;
+  padding-left: 150px;
 }
-
 
 /*--------- TABLETTES & LAPTOP ----------*/
 
 @media (min-width: 900px) {
+  body {
+    margin: initial;
+  }
 
-    body {
-        margin: initial;
-    }
+  .container {
+    flex-direction: row;
+    padding: 10px;
+  }
 
-    .container {
-        flex-direction: row;
-        border: solid 2px gray;
-        padding: 10px;
-    }
+  #left {
+    padding: 0 2%;
+    width: 33%;
+  }
 
-    #left {
-        padding: 0 2%;
-        width: 33%;
-    }
+  #left p {
+    font-size: 16px;
+  }
 
-    #left p {
-        font-size: 16px;
-    }
-        
-    #contact {
-        margin-bottom: 0;
-    }
-
+  #contact {
+    margin-bottom: 0;
+  }
 }
-
 
 /*--------- DESKTOP ----------*/
 
-
 @media (min-width: 1200px) {
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+  }
 
-    .container {
-        width: 60%;
-        margin: 0 auto;
-        border: solid 2px gray;
-        padding: 10px;
-    }
-
-    #left {
-        width: 48%;
-    }
+  #left {
+    width: 48%;
+    width: 60%;
+  }
 }
 
 @media (min-width: 1450px) {
-
-    .container {
-        width: 50%;
-    }
-
+  .container {
+    width: 50%;
+  }
 }
-
